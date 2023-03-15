@@ -4,78 +4,104 @@
   box-sizing: border-box;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
 body {
   margin: 0;
+  background-color: #111;
 }
+
 .video-section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 3rem 1rem;
   padding: 3rem 0;
   margin: 0 1.5rem;
-  border-top: 4px solid #ccc;
+  border-top: 4px solid #4b4b4b;
+  background-color: #111;
 }
+
 .video-section:first-child {
   border-top: none;
 }
+
 .video-container {
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  justify-self: flex-start;
 }
+
 .thumbnail {
   position: relative;
   display: flex;
 }
-.thumbnail::before {
+
+/* .thumbnail::before {
   content: attr(data-duration);
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: whitesmoke;
   right: 5px;
   bottom: 5px;
   padding: 0.1em 0.3em;
   border-radius: 0.3em;
-  font-size: 0.9rem;
-}
+  font-size: 0.8rem;
+} */
 .thumbnail-image {
+  border: 2px solid red;
   width: 100%;
   height: 100%;
-  min-width: 250px;
-  min-height: 150px;
-  background: #aaa;
+  min-width: 350px;
+  min-height: 200px;
+  background-color: #444;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: #9a9a9a;
 }
 .video-bottom-section {
   display: flex;
   align-items: flex-start;
   margin-top: 1rem;
 }
+
 .channel-icon {
   margin-right: 0.75rem;
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  background-color: #aaa;
+  background-color: #444;
 }
-.video-detail {
+
+.video-details {
   display: flex;
   flex-direction: column;
 }
+
 .video-title {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
 }
+
 .video-channel-name {
   margin-bottom: 0.1rem;
   text-decoration: none;
-  color: #555;
+  transition: color 150ms;
 }
+
+.video-channel-name:hover {
+  color: #dfdfdf;
+}
+
 .video-channel-name,
-.video-info {
-  color: #555;
+.video-metadata {
+  color: #a1a1a1;
 }
+
 .video-section-title {
   grid-column: 1 / -1;
   margin: -0.5rem 0;
@@ -83,6 +109,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 0.5rem;
+  color: white;
 }
 
 .video-section-title-close {
@@ -90,6 +117,113 @@ body {
   background: none;
   padding: 0;
   font-size: 2rem;
-  color: #555;
+  color: #999;
   cursor: pointer;
+}
+
+.videos {
+  background-color: #131313;
+}
+
+.categories {
+  padding: 1rem 2rem;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+}
+
+.category-section {
+  display: flex;
+  overflow: hidden;
+}
+
+.category {
+  margin-right: 1rem;
+  word-wrap: none;
+  white-space: nowrap;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  cursor: pointer;
+  transition: background-color 150ms;
+  color: #dfdfdf;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.category:hover {
+  background-color: #555;
+}
+
+.category.active {
+  background-color: whitesmoke;
+  color: #2b2b2b;
+  border-color: #eee;
+}
+
+.category:last-child {
+  margin-right: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.youtube-logo {
+  height: 30px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 60%;
+  font-size: inherit;
+  padding: 0.4em;
+  border: 1px solid #444;
+  border-top-right-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 20px;
+  background: none;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem;
+  border: 1px solid #444;
+  background-color: #222;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #2e2e2e;
+}
+
+.menu-icons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu-channel-icon {
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  background-color: #444;
 }
