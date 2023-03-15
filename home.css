@@ -9,7 +9,31 @@ body {
   margin: 0;
   background-color: #111;
 }
+.align {
+  display: flex;
+}
 
+.side-section {
+  margin: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 500px;
+  width: 250px;
+  background-color: none;
+  cursor: pointer;
+}
+.side {
+  display: flex;
+  align-items: center;
+
+  margin: 2px;
+}
+.side:hover {
+  background-color: #333;
+  border-radius: 10px;
+}
 .video-section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -154,7 +178,7 @@ a {
 }
 
 .category {
-  margin-right: 1rem;
+  margin-right: 3rem;
   word-wrap: none;
   white-space: nowrap;
   border: none;
@@ -186,7 +210,6 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem;
 }
 
@@ -198,13 +221,14 @@ a {
   display: flex;
   justify-content: center;
   flex-grow: 1;
+
   margin: 0 auto;
 }
 
 .search-input {
-  width: 60%;
+  width: 50%;
   font-size: inherit;
-  padding: 0.4em;
+  padding: 0.4em 1.5em;
   border: 1px solid #444;
   border-top-right-radius: 0;
   border-top-left-radius: 20px;
