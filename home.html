@@ -15,75 +15,83 @@
     <title>Youtube Clone</title>
   </head>
   <body>
+    <header class="header">
+      <a class="sandwitch"> <img src="menu_white_24dp.png" alt="" /></a>
+      <a href="#">
+        <img src="logo.png" alt="YouTube Logo" class="youtube-logo" />
+      </a>
+
+      <form class="search-bar">
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button type="submit" class="search-btn">
+          <img src="search_Icon.png" alt="" />
+        </button>
+        <a href="#">
+          <img
+            style="height: 25px; margin: 5px 20px 0 20px"
+            src="mic_Icon.png"
+            alt=""
+          />
+        </a>
+      </form>
+
+      <div class="menu-icons">
+        <a href="#">
+          <img style="height: 30px" src="videocall_icon.png" alt="" />
+        </a>
+
+        <a href="#">
+          <img src="bell_icon.png" alt="" />
+        </a>
+        <a href="#">
+          <img class="menu-channel-icon" src="" alt="" />
+        </a>
+      </div>
+    </header>
     <div class="align">
       <div class="sides">
         <section class="side-section">
-          <a class="side"> <img src="menu_white_24dp.png" alt="" /></a>
           <a class="side"
-            ><img src="home_white.png" alt="" />&nbsp;&nbsp;&nbsp;&nbsp; Home</a
+            ><img class="side-icons" src="home_white.png" alt="" />
+            &nbsp;&nbsp;&nbsp;&nbsp; Home</a
           >
           <a class="side">
             <img
-              src="shorts-short-video-icon.jpg"
+              class="side-icons"
+              src="shorts-short-video-icon.png"
               alt=""
             />&nbsp;&nbsp;&nbsp;&nbsp;Shorts</a
           >
           <a class="side">
             <img
+              class="side-icons"
               src="subscriptions_white.png"
               alt=""
             />&nbsp;&nbsp;&nbsp;&nbsp;Subsciptions</a
           >
           <a class="side">
             <img
+              class="side-icons"
               src="video_library_white.png"
               alt=""
             />&nbsp;&nbsp;&nbsp;&nbsp;Library</a
           >
           <a class="side">
-            <img src="download-icon.png" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;
-            Downloads</a
+            <img
+              class="side-icons"
+              src="download-icon.png"
+              alt=""
+            />&nbsp;&nbsp;&nbsp;&nbsp; Downloads</a
           >
         </section>
       </div>
+
       <div class="main-section">
-        <header class="header">
-          <a href="#">
-            <img src="logo.png" alt="YouTube Logo" class="youtube-logo" />
-          </a>
-
-          <form class="search-bar">
-            <input
-              class="search-input"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button type="submit" class="search-btn">
-              <img src="search_Icon.png" alt="" />
-            </button>
-            <a href="#">
-              <img
-                style="height: 25px; margin: 5px 20px 0 20px"
-                src="mic_Icon.png"
-                alt=""
-              />
-            </a>
-          </form>
-
-          <div class="menu-icons">
-            <a href="#">
-              <img style="height: 30px" src="videocall_icon.png" alt="" />
-            </a>
-
-            <a href="#">
-              <img src="bell_icon.png" alt="" />
-            </a>
-            <a href="#">
-              <img class="menu-channel-icon" src="" alt="" />
-            </a>
-          </div>
-        </header>
         <div class="categories">
           <section class="category-section">
             <button class="category active">All</button>
@@ -610,6 +618,7 @@
               </div>
             </article>
           </section>
+          <section class="video-section"></section>
         </div>
       </div>
     </div>
