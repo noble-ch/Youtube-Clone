@@ -9,14 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="Youtube_logo_title.png" />
+    <link rel="icon" href="images/Youtube_logo_title.png" />
     <title>Youtube Clone</title>
   </head>
   <body>
     <header class="header">
-      <a class="sandwitch"> <img src="menu_white_24dp.png" alt="" /></a>
+      <a onclick="hidenames()" class="sandwitch">
+        <img  src="images/menu_white_24dp.png" alt=""
+      /></a>
       <a href="#">
-        <img src="logo.png" alt="YouTube Logo" class="youtube-logo" />
+        <img src="/images/logo.png" alt="YouTube Logo" class="youtube-logo" />
       </a>
 
       <form class="search-bar">
@@ -27,12 +29,12 @@
           aria-label="Search"
         />
         <button type="submit" class="search-btn">
-          <img src="search_Icon.png" alt="" />
+          <img src="images/search_Icon.png" alt="" />
         </button>
         <a href="#">
           <img
             style="height: 25px; margin: 5px 20px 0 20px"
-            src="mic_Icon.png"
+            src="images/mic_Icon.png"
             alt=""
           />
         </a>
@@ -40,11 +42,11 @@
 
       <div class="menu-icons">
         <a href="#">
-          <img style="height: 30px" src="videocall_icon.png" alt="" />
+          <img style="height: 30px" src="images/videocall_icon.png" alt="" />
         </a>
 
         <a href="#">
-          <img src="bell_icon.png" alt="" />
+          <img src="images/bell_icon.png" alt="" />
         </a>
         <a href="#">
           <img class="menu-channel-icon" src="" alt="" />
@@ -53,38 +55,42 @@
     </header>
     <div class="align">
       <div class="sides">
-        <section class="side-section">
+        <section id ="side-section">
           <a class="side"
-            ><img class="side-icons" src="home_white.png" alt="" />
-            &nbsp;&nbsp;&nbsp;&nbsp; Home</a
+            ><img class="side-icons" src="images/home_white.png" alt="" />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="side-names"> Home</span></a
           >
           <a class="side">
             <img
               class="side-icons"
-              src="shorts-short-video-icon.png"
+              src="images/shorts-short-video-icon.png"
               alt=""
-            />&nbsp;&nbsp;&nbsp;&nbsp;Shorts</a
+            />&nbsp;&nbsp;&nbsp;&nbsp;<span id="side-names">Shorts</span></a
           >
           <a class="side">
             <img
               class="side-icons"
-              src="subscriptions_white.png"
+              src="images/subscriptions_white.png"
               alt=""
-            />&nbsp;&nbsp;&nbsp;&nbsp;Subsciptions</a
+            />&nbsp;&nbsp;&nbsp;&nbsp;<span class="side-names"><span class="side-names">Subsciptions</span></a
           >
           <a class="side">
             <img
               class="side-icons"
-              src="video_library_white.png"
+              src="images/video_library_white.png"
               alt=""
-            />&nbsp;&nbsp;&nbsp;&nbsp;Library</a
+            />&nbsp;&nbsp;&nbsp;&nbsp;<span class="side-names">
+              Library</span
+            ></a
           >
           <a class="side">
             <img
               class="side-icons"
-              src="download-icon.png"
+              src="images/download-icon.png"
               alt=""
-            />&nbsp;&nbsp;&nbsp;&nbsp; Downloads</a
+            />&nbsp;&nbsp;&nbsp;&nbsp;<span class="side-names">
+              Downloads</span
+            ></a
           >
         </section>
       </div>
@@ -286,7 +292,7 @@
             <h2 class="video-section-title">
               <img
                 style="height: 50px"
-                src="Youtube_shorts_icon.png"
+                src="images/Youtube_shorts_icon.png"
                 alt="youtubeshort"
               />
 
@@ -619,5 +625,6 @@
         </div>
       </div>
     </div>
+    <script src="home.js"></script>
   </body>
 </html>

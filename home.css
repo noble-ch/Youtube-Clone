@@ -14,7 +14,7 @@ body {
   display: flex;
 }
 
-.side-section {
+#side-section {
   margin: 1rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -112,6 +112,9 @@ body {
   min-height: 200px;
   background-color: #444;
   border-radius: 10px;
+}
+.thumbnail-image:hover {
+  background-color: #333;
 }
 .short-thumbnail-image {
   width: 100%;
