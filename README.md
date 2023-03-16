@@ -1,6 +1,6 @@
 # Youtube-Clone
 # Type: Webpage 
-# made with html and css
-# no Back-ends 
+# Made with html and css
+# No Back-ends 
 # User interface only
-# feel free to download and and add more features
+# Feel free to download and and add more features
