@@ -1,7 +1,4 @@
 # Youtube-Clone
 # Type : webpage 🌐
-# Tools
-  -Html
-  -Css
-  -Java-script 
+# Tools -Html , Css , Java-script 
 
