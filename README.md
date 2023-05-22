@@ -1,5 +1,3 @@
 # Youtube-Clone
 # Type : webpage 🌐s
-# Tools -Html , Css , Java-script ddddd
-dddddddd
-sdsssdggit ssdddddddsssssssssssssssedddddddsxddddds
+# Tools -Html , Css , Java-script 
